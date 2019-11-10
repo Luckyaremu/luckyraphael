@@ -1,48 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<div id="page-wrapper">
+  <header id="header">
+    <div class="logo">
+      <img id="header-img" src="./img/pic10.png" alt="Best cosmetologist" />
+    </div>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <header id="header">
-      <div class="logo">
-        <img id="header-img" src="" alt="Best cosmetologist" />
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#features">Product</a></li>
+        <li><a class="nav-link" href="#how-it-works">Where to buy</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+      </ul>
+    </nav>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </header>
+
+  <div class="container"></div>
+
+  <section id="hero">
+    <h2>For your skin care kindly fill in your email</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input name="email" id="email" type="email" placeholder="Enter your email address" required />
+      <input id="submit" type="submit" value="Get Started" class="btn" />
+    </form>
+  </section>
+
+  <div class="container">
+    <section id="features">
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+        <div class="desc">
+          <h1>Our services</h1>
+          <h2>Skin Brightening</h2>
+          <p>
+            Our skin Brightening product is sourced from the best organic
+            products from the locals of africa, and which slows down skin
+            ageing.
+          </p>
+        </div>
       </div>
-
-      <nav id="nav-bar">
-        <ul>
-          <li><a class="nav-link" href="#features">Product</a></li>
-          <li><a class="nav-link" href="#how-it-works">Where to buy</a></li>
-          <li><a class="nav-link" href="#pricing">Pricing</a></li>
-        </ul>
-      </nav>
-      <link rel="stylesheet" href="landing.css" />
-    </header>
-    
-      <section id="hero">
-        <h2>For your skin care kindly fill in your email</h2>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <input
-            name="email"
-            id="email"
-            type="email"
-            placeholder="Enter your email address"
-            required
-          />
-          <input id="submit" type="submit" value="Get Started" class="btn" />
-        </form>
-      </section>
-
-
-      <section id="how-it-works">
-        <iframe id="video" height="315"
-          src="https://www.youtube-nocookie.com/embed/Gm7nYm4og48?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"
-          allowfullscreen></iframe>
-      </section>      
-    <script  src="js/index.js"></script>
-  </body>
-</html>
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+        <div class="desc">
+          <h2>Skin massage</h2>
+          <p>
+            We make sure every of our customers gets a skin massage from our
+            best skin therapist on thier own concernt, this therapy kills skin
+            gerns and removes dead skin from the body.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+          <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+        </div>
+        <div class="desc">
+          <h2>Quality Service</h2>
+          <p>
+            For every purchase you make and every skin therapy session, we will
+            ensure there are no damages on the products and also check back via
+            phone and mail to confirm the effectiveness of our product on you..
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="how-it-works">
+      <iframe id="video" height="315"
+        src="https://www.youtube-nocookie.com/embed/Gm7nYm4og48?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"
+        allowfullscreen></iframe>
+    </section>
+    <section id="pricing">
+      <div class="product" id="tenor">
+        <div class="level">Skin Oil</div>
+        <h2>$200</h2>
+        <ol>
+          <li>Cure dead skins</li>
+          <li>Removes skin wrinkling</li>
+          <li>Slows down ageing</li>
+          <li>100% natural</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="bass">
+        <div class="level">Skin massage therapy</div>
+        <h2>$500</h2>
+        <ol>
+          <li>natural oil massage</li>
+          <li>professional therapist with more than 10years experince</li>
+          <li>service covers your partners</li>
+          <li>revives dead skin</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="valve">
+        <div class="level">Skin doctor</div>
+        <h2>$3000</h2>
+        <ol>
+          <li>Package of skin products for 1 years</li>
+          <li>One skin therapy every month</li>
+          <li>includes you partner and children</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Copyright 2019, Original skincare products</span>
+    </footer>
+  </div>
+</div>
